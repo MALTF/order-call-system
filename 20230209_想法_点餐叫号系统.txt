@@ -1,0 +1,14 @@
+点餐叫号系统
+
+OrderAndCallSystem
+
+1、服务端
+
+call
+voice
+
+
+2、客户端App 分店家版和消费者版
+
+
+3、PC端 点餐操作系统
