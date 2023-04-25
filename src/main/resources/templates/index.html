@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <style>
+        /*
+        需求: 要求用纯CSS的方式实现盒子的宽高比始终为2:1
+        思路:
+            1.直接通过css宽高属性，aspect-ratio
+            2.hack方案控制
+        */
+        .box {
+            width: 100%;
+            /*方案一：*/
+            /*aspect-ratio: 2/1;*/
+            /*方案二：问题，在div中加内容，会不会有影响*/
+            height: 0;
+            padding-top: 50%;
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div style="text-align: center; background-color: goldenrod">这里是标题</div>
+    <div style="text-align: center; background-color: bisque">这里是文本内容</div>
+</div>
+</body>
+</html>
